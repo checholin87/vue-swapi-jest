@@ -91,6 +91,7 @@
         >
       </li>
     </ul>
+    <button @click="salute">Salute</button>
   </div>
 </template>
 
@@ -99,6 +100,11 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  methods: {
+    salute() {
+      console.log("Hello!");
+    }
   }
 };
 </script>
